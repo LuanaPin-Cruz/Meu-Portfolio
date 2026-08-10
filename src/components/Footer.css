@@ -1,0 +1,24 @@
+.footer {
+  border-top: 1px solid var(--border-soft);
+  padding: 32px 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer__inner a {
+  color: var(--text-muted);
+  transition: color 0.2s var(--ease);
+}
+
+.footer__inner a:hover {
+  color: var(--purple-400);
+}
