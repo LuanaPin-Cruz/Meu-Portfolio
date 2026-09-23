@@ -30,9 +30,8 @@ export default function App() {
             <p className="status"><span /> online · explorando o próximo nível</p>
             <p className="hero__mini">Olá, eu sou</p>
             <h1>Luana <em>Pinheiro</em> Cruz<span className="spark">✦</span></h1>
-            <p className="hero__description">Estudante de Informática, criadora de experiências digitais e curiosa por tudo que une programação, games e impacto real.</p>
             <div className="hero__actions"><a className="button button--primary" href="#projetos">Ver meus projetos <span>→</span></a><a className="button button--outline" href="#contato">Vamos conversar</a></div>
-            <div className="quick-stats" aria-label="Resumo profissional"><article><span className="quick-stats__icon">✦</span><div><strong>18 anos</strong><span>curiosidade sem limite</span></div></article><article><span className="quick-stats__icon">⌘</span><div><strong>3º ano</strong><span>Técnico em Informática</span></div></article><article><span className="quick-stats__icon">◌</span><div><strong>Univap</strong><span>São José dos Campos</span></div></article></div>
+            <div className="quick-stats" aria-label="Resumo profissional"><article><span className="quick-stats__icon">✦</span><div><strong>18 anos</strong><span>Curiosidade sem limite</span></div></article><article><span className="quick-stats__icon">⌘</span><div><strong>3º ano</strong><span>Técnico em Informática</span></div></article><article><span className="quick-stats__icon">◌</span><div><strong>Univap</strong><span>São José dos Campos</span></div></article></div>
           </div>
           <div className="hero__visual">
             <div className="pixel pixel--one">✦</div><div className="pixel pixel--two">♡</div>
