@@ -15,3 +15,5 @@ Os cartões de projetos levam ao GitHub: TCC sobre leucemia, Faltas CTI e Detect
 O projeto usa React com Vite. O Vercel detecta essa estrutura e publica o resultado do comando de build automaticamente após o envio das alterações ao GitHub.
 
 Para a prévia local, use `npm run dev`, e não a extensão Live Server. O `esbuild` é a ferramenta usada pelo Vite para processar o projeto; sua permissão de instalação está declarada no `package.json` para os gerenciadores npm que exigem essa aprovação.
+
+As dependências em `node_modules/` são instaladas automaticamente e não fazem parte do repositório. Isso garante que o Vercel use os executáveis próprios do ambiente Linux durante a publicação.
