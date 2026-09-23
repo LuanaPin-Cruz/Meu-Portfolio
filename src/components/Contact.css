@@ -22,6 +22,11 @@
   transform: translateY(-4px);
 }
 
+.contact__icon {
+  color: var(--purple-400);
+  margin-bottom: 4px;
+}
+
 .contact__label {
   font-family: var(--font-mono);
   font-size: 0.78rem;

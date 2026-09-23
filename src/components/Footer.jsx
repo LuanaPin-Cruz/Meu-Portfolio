@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer__inner">
-        <span>© {year} Seu Nome. Construído com React.</span>
+        <span>© {year} Luana Pinheiro Cruz. Construído com React & Three.js.</span>
         <a href="#top">voltar ao topo ↑</a>
       </div>
     </footer>

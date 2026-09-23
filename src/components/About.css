@@ -17,6 +17,11 @@
   transform: translateY(-4px);
 }
 
+.about__icon {
+  color: var(--purple-400);
+  margin-bottom: 14px;
+}
+
 .about__label {
   display: block;
   font-family: var(--font-mono);

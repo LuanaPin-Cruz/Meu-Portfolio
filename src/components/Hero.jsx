@@ -1,9 +1,10 @@
 import { useTypewriter } from '../hooks/useTypewriter'
+import Scene3D from './Scene3D'
 import './Hero.css'
 
 const TERMINAL_LINES = [
   { prompt: '~$', text: 'whoami', speed: 55 },
-  { prompt: '', text: 'Seu Nome — Desenvolvedor(a) & Freelancer de TI', speed: 18, isOutput: true },
+  { prompt: '', text: 'Luana Pinheiro Cruz — Dev Full-Stack & Freelancer, 18 anos', speed: 16, isOutput: true },
   { prompt: '~$', text: 'cat foco.txt', speed: 55 },
   {
     prompt: '',
@@ -20,6 +21,7 @@ export default function Hero() {
 
   return (
     <section id="top" className="hero">
+      <Scene3D />
       <div className="container hero__inner">
         <div className="hero__copy">
           <p className="eyebrow">disponível para freelance</p>

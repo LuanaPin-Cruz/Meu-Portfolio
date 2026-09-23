@@ -22,7 +22,7 @@ export default function Nav() {
     <header className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <div className="container nav__inner">
         <a href="#top" className="nav__logo">
-          ~/seu-nome
+          ~/luana-cruz
         </a>
 
         <nav className="nav__links">

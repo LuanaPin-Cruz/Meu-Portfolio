@@ -1,3 +1,6 @@
+import { FaGithub } from 'react-icons/fa'
+import { ExternalLink } from 'lucide-react'
+import { useTilt } from '../hooks/useTilt'
 import './Projects.css'
 
 // TODO: troque pelos seus projetos reais (nome, descrição, tags, links)
@@ -28,6 +31,40 @@ const PROJECTS = [
   },
 ]
 
+function ProjectCard({ project }) {
+  const tilt = useTilt({ max: 8, scale: 1.015 })
+
+  return (
+    <article
+      className="project-card"
+      ref={tilt.ref}
+      onMouseMove={tilt.onMouseMove}
+      onMouseLeave={tilt.onMouseLeave}
+    >
+      <div className="project-card__top">
+        <h3 className="project-card__title">{project.name}</h3>
+        <p className="project-card__description">{project.description}</p>
+        <ul className="project-card__tags">
+          {project.tags.map((tag) => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="project-card__links">
+        <a href={project.github} target="_blank" rel="noreferrer">
+          <FaGithub size={15} /> Código
+        </a>
+        {project.demo && (
+          <a href={project.demo} target="_blank" rel="noreferrer">
+            <ExternalLink size={15} strokeWidth={1.8} /> Demo
+          </a>
+        )}
+      </div>
+    </article>
+  )
+}
+
 export default function Projects() {
   return (
     <section id="projetos">
@@ -40,28 +77,7 @@ export default function Projects() {
 
         <div className="projects__grid">
           {PROJECTS.map((project) => (
-            <article className="project-card" key={project.name}>
-              <div className="project-card__top">
-                <h3 className="project-card__title">{project.name}</h3>
-                <p className="project-card__description">{project.description}</p>
-                <ul className="project-card__tags">
-                  {project.tags.map((tag) => (
-                    <li key={tag}>{tag}</li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="project-card__links">
-                <a href={project.github} target="_blank" rel="noreferrer">
-                  Código →
-                </a>
-                {project.demo && (
-                  <a href={project.demo} target="_blank" rel="noreferrer">
-                    Demo →
-                  </a>
-                )}
-              </div>
-            </article>
+            <ProjectCard project={project} key={project.name} />
           ))}
         </div>
       </div>
