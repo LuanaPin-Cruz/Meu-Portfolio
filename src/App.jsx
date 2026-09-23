@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 const projects = [
-  { number: '01', title: 'TCC · Leucemia', type: 'Saúde + tecnologia', description: 'Projeto de conclusão que explora a tecnologia como apoio à identificação e ao estudo da leucemia.', tech: ['Python', 'Machine Learning', 'TCC'], link: 'https://github.com/LuanaPin-Cruz/TCC---Diagn-stico-de-Leucemia', accent: 'pink' },
-  { number: '02', title: 'Faltas CTI', type: 'Sistema educacional', description: 'Uma solução pensada para acompanhar faltas e organizar informações acadêmicas de forma prática.', tech: ['Sistema', 'Educação', 'Dados'], link: 'https://github.com/LuanaPin-Cruz?tab=repositories&q=Faltas', accent: 'blue' },
+  { number: '01', title: 'TCC · Leucemia', type: 'Saúde + tecnologia', description: 'Projeto de conclusão que explora a tecnologia como apoio à identificação e ao estudo da leucemia.', tech: ['JavaScript', 'CSS', 'Machine Learning'], link: 'https://github.com/LuanaPin-Cruz/TCC---Diagn-stico-de-Leucemia', accent: 'pink' },
+  { number: '02', title: 'Faltas CTI', type: 'Sistema educacional', description: 'Uma solução pensada para acompanhar faltas e organizar informações acadêmicas de forma prática.', tech: ['TypeScript', 'CSS', 'Dados'], link: 'https://github.com/LuanaPin-Cruz?tab=repositories&q=Faltas', accent: 'blue' },
   { number: '03', title: 'Detector de Libras', type: 'Acessibilidade + IA', description: 'Reconhecimento de Libras acompanhado de um jogo da forca: aprendizado, inclusão e diversão no mesmo projeto.', tech: ['Python', 'Visão computacional', 'Acessibilidade'], link: 'https://github.com/LuanaPin-Cruz/LIBRAS', accent: 'yellow' },
 ]
 
@@ -43,7 +43,7 @@ export default function App() {
 
         <section id="sobre" className="section-wrap about">
           <div className="section-heading"><p className="kicker">01 · SOBRE MIM</p><h2>Entre códigos, ideias e <em>boas missões.</em></h2></div>
-          <div className="about__content"><p>Sou Luana, tenho 18 anos e moro em São José dos Campos, São Paulo. Curso o Ensino Médio junto ao Técnico em Informática na Univap, onde transformo a curiosidade em projetos de verdade.</p><p>Gosto de criar soluções que sejam úteis, acessíveis e gostosas de usar — seja um sistema, um jogo ou uma ideia que ainda está no rascunho. Para mim, cada projeto é uma nova fase para explorar.</p><div className="about__badges"><span>✦ criativa</span><span>✦ dedicada</span><span>✦ em equipe</span><span>✦ sempre aprendendo</span></div></div>
+          <div className="about__content"><p>Sou Luana, tenho 18 anos e moro em São José dos Campos, São Paulo. Curso o Ensino Médio junto ao Técnico em Informática na Univap, onde transformo a curiosidade em projetos de verdade.</p><p>Gosto de criar soluções que sejam úteis, acessíveis e gostosas de usar — seja um sistema, um jogo ou uma ideia que ainda está no rascunho. Para mim, cada projeto é uma nova fase para explorar.</p><div className="about__badges"><span>✦ criativa</span><span>✦ dedicada</span><span>✦ trabalho em equipe</span><span>✦ sempre aprendendo</span></div></div>
         </section>
 
         <section id="habilidades" className="section-wrap skills-section">
