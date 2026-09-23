@@ -11,6 +11,8 @@ npm run dev
 
 Abre em `http://localhost:5173`.
 
+Este é um projeto React com Vite: não use a extensão Live Server para abri-lo. Caso o npm exiba um aviso sobre o script do `esbuild`, a permissão para a versão usada pelo projeto já está registrada no `package.json`; execute novamente `npm install` e depois `npm run dev`.
+
 ## O que editar primeiro
 
 Todo o conteúdo de exemplo está marcado com `// TODO`. Os principais lugares:
